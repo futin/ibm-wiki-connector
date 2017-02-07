@@ -1,0 +1,57 @@
+{
+  "author": {
+    "name": "Andreja Jevtic",
+    "email": "andrajevtic@gmail.com"
+  },
+  "dependencies": {
+    "async": "1.5.2",
+    "lodash": "4.15.0",
+    "loopback-connector": "2.6.0",
+    "loopback-datasource-juggler": "2.53.0",
+    "oniyi-logger": "1.0.0",
+    "oniyi-http-plugin-credentials": "0.1.0",
+    "ibm-connections-wikis-service": "github:futin/ibm-connections-wikis-service"
+  },
+  "description": "LoopBack connector that aggregates results from multiple sources",
+  "devDependencies": {
+    "ava": "0.16.0",
+    "babel-eslint": "6.1.2",
+    "dmd-bitbucket": "0.1.10",
+    "eslint": "3.5.0",
+    "eslint-config-oniyi": "4.2.0",
+    "eslint-plugin-ava": "3.0.0",
+    "jsdoc-to-markdown": "1.3.6",
+    "nyc": "8.1.0"
+  },
+  "engines": {
+    "node": ">=v6.2.2"
+  },
+  "files": [
+    "lib/"
+  ],
+  "homepage": "",
+  "keywords": [
+    "gravity",
+    "loopback",
+    "connector",
+    "wiki"
+  ],
+  "license": "UNLICENSED",
+  "main": "lib/index.js",
+  "name": "gravity-connector-wiki",
+  "optionalDependencies": {},
+  "private": true,
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov",
+    "docs": "jsdoc2md --plugin dmd-bitbucket --src lib/*.js > API.md",
+    "lint": "eslint .",
+    "test": "ava",
+    "test:watch": "npm test -- --watch"
+  },
+  "version": "1.0.0"
+}

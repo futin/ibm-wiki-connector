@@ -1,7 +1,25 @@
 {
+  "name": "gravity-connector-wiki",
+  "version": "1.0.0",
+  "description": "LoopBack connector that retrieves feed from ibm-connections-wikis",
+  "license": "UNLICENSED",
   "author": {
     "name": "Andreja Jevtic",
     "email": "andrajevtic@gmail.com"
+  },
+  "keywords": [
+    "gravity",
+    "loopback",
+    "connector",
+    "wiki"
+  ],
+  "repository": "futin/ibm-wiki-connector",
+  "scripts": {
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov",
+    "docs": "jsdoc2md --plugin dmd-bitbucket --src lib/*.js > API.md",
+    "lint": "eslint .",
+    "test": "ava --verbose",
+    "test:watch": "npm test -- --watch"
   },
   "dependencies": {
     "async": "1.5.2",
@@ -12,7 +30,6 @@
     "oniyi-http-plugin-credentials": "0.1.0",
     "ibm-connections-wikis-service": "github:futin/ibm-connections-wikis-service"
   },
-  "description": "LoopBack connector that aggregates results from multiple sources",
   "devDependencies": {
     "ava": "0.16.0",
     "babel-eslint": "6.1.2",
@@ -30,29 +47,7 @@
   "files": [
     "lib/"
   ],
-  "homepage": "",
-  "keywords": [
-    "gravity",
-    "loopback",
-    "connector",
-    "wiki"
-  ],
-  "license": "UNLICENSED",
   "main": "lib/index.js",
-  "name": "gravity-connector-wiki",
-  "optionalDependencies": {},
   "private": true,
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "scripts": {
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov",
-    "docs": "jsdoc2md --plugin dmd-bitbucket --src lib/*.js > API.md",
-    "lint": "eslint .",
-    "test": "ava --verbose",
-    "test:watch": "npm test -- --watch"
-  },
-  "version": "1.0.0"
+  "readmeFilename": "README.md"
 }

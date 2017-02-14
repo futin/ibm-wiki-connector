@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "async": "1.5.2",
+    "bluebird": "^3.4.7",
     "lodash": "4.15.0",
     "loopback-connector": "2.6.0",
     "loopback-datasource-juggler": "2.53.0",

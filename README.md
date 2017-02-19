@@ -1,4 +1,4 @@
-# gravity-connector-aggregate
+# gravity-connector-wiki
 > LoopBack connector that retrieves wikis and pages feed
 
 ## Installation
@@ -10,7 +10,7 @@ $ npm install --save gravity-connector-wiki
 ## Usage
 
 ```js
-var gravityConnectorWiki = require('gravity-connector-wiki');
+const gravityConnectorWiki = require('gravity-connector-wiki');
 
 gravityConnectorWiki('http://www.some-url.com', options);
 ```

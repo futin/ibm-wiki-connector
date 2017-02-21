@@ -2,3 +2,4 @@
 .eslintrc
 .idea/
 node_modules/
+/.project

@@ -18,7 +18,7 @@
     "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov",
     "docs": "jsdoc2md --plugin dmd-bitbucket --src lib/*.js > API.md",
     "lint": "eslint .",
-    "test": "ava --verbose",
+    "test-ava": "ava --verbose",
     "test:watch": "npm test -- --watch"
   },
   "dependencies": {

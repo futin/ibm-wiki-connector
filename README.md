@@ -12,5 +12,5 @@ $ npm install --save gravity-connector-wiki
 ```js
 const gravityConnectorWiki = require('gravity-connector-wiki');
 
-gravityConnectorWiki('http://www.some-url.com', options);
+gravityConnectorWiki('Rainbow');
 ```

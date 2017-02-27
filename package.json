@@ -24,12 +24,12 @@
   "dependencies": {
     "async": "1.5.2",
     "bluebird": "^3.4.7",
+    "ibm-connections-wikis-service": "github:futin/ibm-connections-wikis-service",
     "lodash": "4.15.0",
     "loopback-connector": "2.6.0",
     "loopback-datasource-juggler": "2.53.0",
-    "oniyi-logger": "1.0.0",
     "oniyi-http-plugin-credentials": "0.1.0",
-    "ibm-connections-wikis-service": "github:futin/ibm-connections-wikis-service"
+    "oniyi-logger": "1.0.0"
   },
   "devDependencies": {
     "ava": "0.16.0",

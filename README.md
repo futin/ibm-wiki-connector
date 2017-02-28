@@ -4,13 +4,13 @@
 ## Installation
 
 ```sh
-$ npm install --save gravity-connector-wiki
+$ npm install --save gravity-connector-ibm-connections-wiki
 ```
 
 ## Usage
 
 ```js
-const gravityConnectorWiki = require('gravity-connector-wiki');
+const gravityConnectorWiki = require('gravity-connector-ibm-connections-wiki');
 
 gravityConnectorWiki('Rainbow');
 ```

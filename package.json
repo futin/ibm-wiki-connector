@@ -1,5 +1,5 @@
 {
-  "name": "gravity-connector-wiki",
+  "name": "gravity-connector-ibm-connections-wiki",
   "version": "1.0.0",
   "description": "LoopBack connector that retrieves feed from ibm-connections-wikis",
   "license": "UNLICENSED",

@@ -1,13 +1,17 @@
 'use strict';
+// core modules
 
-import { test } from 'ava';
-import sinon from 'sinon';
+// 3rd party modules
 import _ from 'lodash';
+import sinon from 'sinon';
+import { test } from 'ava';
 
 // stubs, spies & mocks
 import { Connector } from 'loopback-connector';
 import { DataSource } from 'loopback-datasource-juggler';
 import { initialize } from '../lib';
+
+// internal modules
 
 let mySourceSettings;
 let fooConnector;
@@ -21,7 +25,6 @@ test.before(() => {
   fooConnector = new Connector({ initialize: sinon.spy() });
   // fooSource datasource with vanilla fooConnector
   fooSource = new DataSource({ connector: fooConnector }, mySourceSettings);
-  // barSource datasource with barConnector
 });
 
 test('checks when initialized with callback as function', (t) => {
